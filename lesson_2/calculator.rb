@@ -52,7 +52,7 @@ loop do
 
     if valid_number?(number2)
       break
-    else 
+    else
       prompt("Hmm... that doesn't look like a valid number.")
     end
   end
@@ -80,7 +80,7 @@ loop do
 
   prompt("#{operation_to_message(operator)} the two numbers...")
 
-  result = case operator
+  result =  case operator
             when '1'
               number1.to_i + number2.to_i
             when '2'
@@ -89,7 +89,7 @@ loop do
               number1.to_i * number2.to_i
             when '4'
               number1.to_f / number2.to_f
-  end
+            end
 
   prompt("The result is #{result}")
 
