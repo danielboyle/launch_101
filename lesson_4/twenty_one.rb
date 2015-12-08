@@ -75,7 +75,7 @@ def play_again?
   answer.downcase.start_with?('y')
 end
 
-loop do 
+loop do
   prompt "Welcome to Twenty One!"
 
   deck = initialize_deck
